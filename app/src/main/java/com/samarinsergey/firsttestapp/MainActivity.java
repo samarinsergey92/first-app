@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
         buttonEnter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                textResult.setText(editInput.getText().toString());
+                String text = editInput.getText().toString() + " some text";
+                textResult.setText(text);
             }
         });
     }
